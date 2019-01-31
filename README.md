@@ -11,7 +11,7 @@ What's here
     * tags.csv
         This is a sample file which showcases how one enters data that will be used to create the tags.  It is a comma separated list, with each line giving the information of the producer, color, date, name, and size of a given bottle.  More on how to format this file below.
     * An assorthment of PNG files
-        These include files for produces and for "color swatches".  You'll only need files for the producers/colors you use. These files
+        These include files for producers and for "color swatches".  You'll only need files for the producers/colors you use. These files
     * tags.tex
         This is the code which merges your data from the tags.csv file with the various image files to create the tags. 
  
