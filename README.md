@@ -15,13 +15,13 @@ What's here
     * tags.tex
         This is the code which merges your data from the tags.csv file with the various image files to create the tags. 
  
-How to use it -- if you already have a LaTeX compiler
------------------------------------------------------
+Getting started -- if you don't already have a LaTeX compiler
+---------------------------------------------------------------
 
 Export the files in this project; this should be downloaded to your computer as 'tags.zip'.  Go to Overleaf and create a new personal account; it's free!  Once you've logged into your account, click the "New Project" button in the upper left.  This will give you the chance to upload a zip file, so give it the 'tags.zip' file you exported a moment before. It will take a second to process, but soon you'll see it show up.  You can expand the file structure by clicking on the arrow next to the folder called 'tags'.  Unfortunately Overleaf doesn't allow you to edit the file 'tags.csv' directly in its editor, so you'll need to download it to your computer, enter your data locally (using a simple text editor), and then re-upload.  (See 'Setting up the tags.csv file' below for information about how to format this file.)
 
-How to use it -- if you already have a LaTeX compiler
------------------------------------------------------
+Getting started -- if you already have a LaTeX compiler
+-------------------------------------------------------
 
 To generate the tags you need to (1) update the tags.csv file with the data for the tags you want to create, and (2) compile the tags.tex code in a LaTeX compiler.  The tags.csv file and tags.tex file need to be in the same directory; a folder called tag_graphics should also be in this same directly, and all image files for producers and colors go into the tag_graphics folder.
 
