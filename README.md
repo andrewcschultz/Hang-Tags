@@ -8,11 +8,11 @@ This software is designed to help you make hang tags for beer; the code is set u
 What's here
 ------------
 
-    * tags.csv
+    - tags.csv
         This is a sample file which showcases how one enters data that will be used to create the tags.  It is a comma separated list, with each line giving the information of the producer, color, date, name, and size of a given bottle.  More on how to format this file below.
-    * An assorthment of PNG files
+    - An assorthment of PNG files
         These include files for producers and for "color swatches".  You'll only need files for the producers/colors you use. These files
-    * tags.tex
+    - tags.tex
         This is the code which merges your data from the tags.csv file with the various image files to create the tags. 
  
 Getting started -- if you don't already have a LaTeX compiler
@@ -33,17 +33,17 @@ When inputting your entries into the tags.csv file, be sure to not disturb the f
     producer,color,bottledate,beername,size
     
 The allowable entries for producer are: 
- 		Ca = Cantillon
-		DF = Drie Fonteinen (new silkscreen bottle)
-		DF_old  = Drie Fonteinen (old silkscreen bottle)
-		OB = Oud Beersel
-		B = Boon
-		G = Girardin
-		DC = De Cam
-		T = Tilquin
-		BFM = Brasserie Franches-Montagnes
-		Ch = Chimay
-		L = Lindemans
+ 		Ca = Cantillon;
+		DF = Drie Fonteinen (new silkscreen bottle);
+		DF_old  = Drie Fonteinen (old silkscreen bottle);
+		OB = Oud Beersel;
+		B = Boon;
+		G = Girardin;
+		DC = De Cam;
+		T = Tilquin;
+		BFM = Brasserie Franches-Montagnes;
+		Ch = Chimay;
+		L = Lindemans;
     Bo = Bokkereyder
     LF = Lambiek Fabriek
 
