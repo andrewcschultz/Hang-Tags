@@ -1,0 +1,151 @@
+%\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[landscape]{article}
+\usepackage{tikz,datatool}
+\usepackage{ifthen,intcalc}
+\usepackage{multicol,supertabular,blindtext}
+\usetikzlibrary{decorations.text,calc}
+
+
+\newcommand{\DateTextColor}{}
+\newcommand{\SwatchPath}{}
+\newcommand{\CutoutSize}{}
+\newcommand{\SmallBottleFill}{}
+\newcommand{\MedBottleFill}{}
+\newcommand{\LargeBottleFill}{}
+\newcommand{\Producer}{}
+\newcommand{\comment}[1]{}
+
+
+%
+\newcommand{\maketag}[6]{
+
+
+% #1 = producer
+% 	Allowed values (and key):
+%		Ca = Cantillon
+%		DF = Drie Fonteinen (new silkscreen bottle)
+%		DF_old  = Drie Fonteinen (old silkscreen bottle)
+%		OB = Oud Beersel
+%		B = Boon
+%		G = Girardin
+%		DC = De Cam
+%		T = Tilquin
+%		BFM
+%		Ch = Chimay
+%		L = Lindemans
+%		Bo = Bokkereyder
+%		LF = Lambiek Fabriek
+% #2 = color
+%	Allowed values
+%		yellow
+%		purple
+%		blue
+%		red
+%		orange
+%		orangered
+%		green
+%		pinkred
+%		clear
+%		lightorange
+%		cream
+%		darkpurple
+%
+% #3 = date
+% #4 = name
+% #5 = size
+% #6 = offset
+
+%set text cutout size and color
+\ifthenelse{\equal{#1}{Ca}\OR\equal{#1}{BFM}}{\renewcommand{\CutoutSize}{.5in}}{\renewcommand{\CutoutSize}{.75in}}
+\ifthenelse{\equal{#2}{yellow}\OR\equal{#2}{cream}\OR\equal{#2}{clear}}{\renewcommand{\DateTextColor}{black}}{\renewcommand{\DateTextColor}{white}}
+
+%set producer 	
+\ifthenelse{\equal{#1}{Ca}}{\renewcommand{\Producer}{tag_graphics/cantillon_tag.png}}
+	{\ifthenelse{\equal{#1}{DF}}{\renewcommand{\Producer}{tag_graphics/drie_tag.png}}
+		{\ifthenelse{\equal{#1}{DF_old}}{\renewcommand{\Producer}{tag_graphics/drie_old_tag.png}}
+			{\ifthenelse{\equal{#1}{OB}}{\renewcommand{\Producer}{tag_graphics/oud_beersel_tag.png}}
+				{\ifthenelse{\equal{#1}{B}}{\renewcommand{\Producer}{tag_graphics/boon_tag.png}}
+					{\ifthenelse{\equal{#1}{G}}{\renewcommand{\Producer}{tag_graphics/girardin_tag.png}}
+						{\ifthenelse{\equal{#1}{DC}}{\renewcommand{\Producer}{tag_graphics/de_cam_tag.png}}
+							{\ifthenelse{\equal{#1}{T}}{\renewcommand{\Producer}{tag_graphics/tilquin_tag.png}}
+								{\ifthenelse{\equal{#1}{BFM}}{\renewcommand{\Producer}{tag_graphics/bfm_tag.png}}
+									{\ifthenelse{\equal{#1}{Ch}}{\renewcommand{\Producer}{tag_graphics/chimay_tag.png}}
+										{\ifthenelse{\equal{#1}{L}}{\renewcommand{\Producer}{tag_graphics/lindemans_tag.png}}
+											{\ifthenelse{\equal{#1}{B_old}}{\renewcommand{\Producer}{tag_graphics/boon_old_tag.png}}
+												{\ifthenelse{\equal{#1}{LF}}{\renewcommand{\Producer}{tag_graphics/lambiek_fabriek_tag.png}}
+													{\ifthenelse{\equal{#1}{Bo}}{\renewcommand{\Producer}{tag_graphics/bokkereyder_tag.png}}{}}	
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+%set color swatch
+\renewcommand{\SwatchPath}{tag_graphics/#2_swath.png}
+
+%set bottle size fills
+\ifthenelse{\equal{#5}{375}}{\def\SmallBottleFill{black!50}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!0}}
+	{\ifthenelse{\equal{#5}{750}}{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!50}\def\LargeBottleFill{black!0}}
+		{\ifthenelse{\equal{#5}{1500}}{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!50}}
+			{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!0}}
+		}
+	}
+
+		
+\begin{tikzpicture}[remember picture,overlay,shift={($(current page.north west)+#6$)}]
+
+		\node[anchor=south west,inner sep=0] at (0,-4.25in) {\includegraphics[width=2.2in]{\SwatchPath}};
+		\node[anchor=south west,inner sep=0] at (0,-4.25in) {\includegraphics[width=2.2in]{\Producer}};
+		\draw[-,dotted] (.25in,0) -- ++(1.7in,0) -- ++(.25in,-.5in) -- ++(0in,-3.25in) -- ++(-.25in,-.5in) -- ++(-1.7in,0in) -- ++(-.25in,.5in) -- ++(0in,3.25in) -- ++(.25in,.5in);
+%		\draw[-,dotted] (0,-.5in) -- ++(.25in,.5in);
+%		\draw[-,dotted] (2.2in,-.5in) -- ++(-.25in,.5in);
+%		\draw[-,dotted] (0,-3.75in) -- ++(.25in,-.5in);
+%		\draw[-,dotted] (2.2in,-3.75in) -- ++(-.25in,-.5in);
+%		\draw[-,dotted] (2.2in,0) -- ++(0,-.5in);
+%		\draw[-,dotted] (2.2in,-4.25in) -- ++(0,.5in);
+%		\draw[-,dotted] (0in,-4.25in) -- ++(.25in,0);
+%		\draw[-,dotted] (2.2in,-4.25in) -- ++(-.25in,0in);
+		\draw[-,dotted] (1.1in,-1.25in) circle (\CutoutSize);
+ 		\draw[-,fill=\SmallBottleFill, densely dotted] (.1725in,-.825in) circle (.1in); 
+ 		\draw[-,fill=\MedBottleFill, densely dotted] (.1725in,-1.25in) circle (.1in); 
+ 		\draw[-,fill=\LargeBottleFill, densely dotted] (.1725in,-1.675in) circle (.1in); 
+
+		   
+		\coordinate (TextSpot) at (1.1in,-4in);
+		\node at (TextSpot) {\Large #4};
+		\coordinate (DateSpot) at (1.1in,-.25in);
+		\node[text=\DateTextColor] at (DateSpot) {\bf \huge #3};
+
+\end{tikzpicture}
+
+}
+
+
+\begin{document}
+\pagestyle{empty}
+
+\DTLloaddb{tags}{tags.csv}
+
+\newcommand{\positioner}{}
+\newlength{\xoffset} \setlength{\xoffset}{8.8in}
+\newlength{\yoffset} \setlength{\yoffset}{-4.25in}
+\DTLforeach*{tags}%
+	{\producer=producer,\color=color,\bottledate=bottledate,\beername=beername,\size=size}
+	{%
+		\renewcommand{\positioner}{\intcalcMod{\theDTLrowi}{10}}
+		\ifthenelse{\positioner=1}{\addtolength{\yoffset}{4.25in}}{}
+		\ifthenelse{\positioner=6}{\addtolength{\yoffset}{-4.25in}}{}
+		\ifthenelse{\intcalcMod{\positioner}{5}=1}{\setlength{\xoffset}{0in}}{\addtolength{\xoffset}{2.2in}}
+%		\noindent We're on row \theDTLrowi \ and positioner is \positioner \ and xoffset is \the\xoffset \ and yoffset is \the\yoffset \\
+		\maketag{\producer}{\color}{\bottledate}{\beername}{\size}{(\xoffset,\yoffset)}
+		\ifthenelse{\positioner=0}{\newpage}{}
+	}%
+
+\end{document}	
