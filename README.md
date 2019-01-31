@@ -50,22 +50,22 @@ The allowable entries for producer are:
 		BFM = Brasserie Franches-Montagnes;
 		Ch = Chimay;
 		L = Lindemans;
-    Bo = Bokkereyder
-    LF = Lambiek Fabriek
+		Bo = Bokkereyder;
+	        LF = Lambiek Fabriek.
 
 The allowable entries for color are:
-		yellow
-		purple
-		blue
-		red
-		orange
-		orangered
-		green
-		pinkred
-		clear
-		lightorange
-		cream
-		darkpurple
+		yellow;
+		purple;
+		blue;
+		red;
+		orange;
+		orangered;
+		green;
+		pinkred;
+		clear;
+		lightorange;
+		cream;
+		darkpurple.
 
 If your size entry is one of 375, 750 or 1500, a corresponding circle to the left of the cutout will be shaded.  Obviously you can use these numbers as proxies for "small", "medium" and "large" bottles.
 
