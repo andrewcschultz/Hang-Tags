@@ -3,7 +3,7 @@
 What it does
 ------------
 
-This software is designed to help you make hang tags for beer; the code is set up predominantly for lambic beer, but can be modified to include other producers as well.  After you create a database of information (see below), you can compile the code (see below) to generate a PDF.  The PDF is sized 8.5 inches by 11 inches.
+This code is designed to help you make hang tags for beer; the code is set up predominantly for lambic beer, but can be modified to include other producers as well.  After you create a database of information (see below), you can compile the code (see below) to generate a PDF.  The PDF is sized 8.5 inches by 11 inches.
 
 What's here
 ------------
@@ -11,7 +11,7 @@ What's here
 
 **tags.csv**
 
-This is a sample file which showcases how one enters data that will be used to create the tags.  It is a comma separated list, with each line giving the information of the producer, color, date, name, and size of a given bottle.  More on how to format this file below.
+This is a sample file which showcases how one enters data that will be used to create the tags.  It is a comma separated list, with each line giving the information of the producer, color, date, name, size, cap/cork, and inventory number (if desired) of a given bottle.  More on how to format this file below.
 
 **An assorthment of PNG files**
 
@@ -36,22 +36,85 @@ Setting up the tags.csv file
 
 When inputting your entries into the tags.csv file, be sure to not disturb the first line; your entries will start on the second line. Each entry in the tags.csv file takes the following form
 
-    producer,color,bottledate,beername,size
+    producer,color,bottledate,note,size,cap/cork,ID
     
 The allowable entries for producer are: 
- 		Ca = Cantillon;
-		DF = Drie Fonteinen (new silkscreen bottle);
-		DF_old  = Drie Fonteinen (old silkscreen bottle);
-		OB = Oud Beersel;
-		B = Boon;
-		G = Girardin;
-		DC = De Cam;
-		T = Tilquin;
-		BFM = Brasserie Franches-Montagnes;
-		Ch = Chimay;
-		L = Lindemans;
-		Bo = Bokkereyder;
-	        LF = Lambiek Fabriek.
+	BFM					====		Generic Brasserie des Franches-Montagnes logo
+	Bokke					====		Generic Bokke/Bokkeryder logo
+	Boon					====    	Generic Boon logo
+	BoonBlackLabel				====		Generic Boon Black Label logo (no edition number)
+	BoonMariageParfait
+	BoonMikkellerCalvadosOG		
+	BoonOG						
+	BoonVAT					====		Generic Boon VAT (no VAT number)
+	Cantillon				====		Generic Cantillon logo
+	CantillonCG				====		Non-US label for Cantillon classic gueuze
+	CantillonCGus				====		US label for Cantillon classic gueuze
+	CantillonCSG				====		Cuvee Saint-Gilloise
+	CantillonFF				====		Fou Foune
+	CantillonGCB				====		Non-US Grand Cru Bruocsella (no date)
+	CantillonIris				
+	CantillonKriek
+	CantillonLouPepe
+	CantillonNath2018
+	CantillonRDG
+	CantillonVigneronne
+	Chimay					====		Generic Chimay logo
+	DeCam					====		Generic De Cam logo
+	Drie					====		Generic Drie Fonteinen logo (fountains)
+	DrieAG					====		sublogo on silkscreen bottles
+	DrieAGHoning				====		sublogo on silkscreen bottles
+	DrieAGPaper				====		Paper label for Armand & Gaston (75cl on label)
+	DrieAGV2015				====		sublogo on silkscreen bottles
+	DrieDoesjelPaper			====		Paper label (12.7oz on label)
+	DrieFramboos				====		sublogo on silkscreen bottles
+	DrieFrambozenlambik			====		sublogo on silkscreen bottles
+	DrieFramboosOogst2017			====		sublogo on silkscreen bottles
+	DrieGoldenBlend				====		sublogo on silkscreen bottles
+	DrieHommage				====		sublogo on silkscreen bottles
+	DrieHommageBioFrambozenBarrel		====		sublogo on silkscreen bottles
+	DrieHommageBioFrambozenHoning		====		sublogo on silkscreen bottles
+	DrieIntenseRed				====		sublogo on silkscreen bottles
+	DrieKriek				====		sublogo on silkscreen bottles
+	DrieKriekenlambik			====		sublogo on silkscreen bottles
+	DrieKriekHoning				====		sublogo on silkscreen bottles
+	DrieKriekPaper				====		Paper label (37.5cl on label)
+	DrieOG					====		sublogo on silkscreen bottles
+	DrieOGHoning				====		sublogo on silkscreen bottles
+	DrieOGPaper				====		Paper label (37.5cl on label)
+	DrieOGPaperus				====		US Paper label (12.7oz on label)
+	DrieOGV2014						
+	DrieOGV2016
+	DrieOld					====		Generic Drie Fonteinen logo (Papyrus-typeset "3")
+	DrieSchaarbeekseKriek			====		sublogo on silkscreen bottles
+	Girardin				====		Generic Girardin logo
+	GirardinBlackLabel				
+	HanssensHandgeplukte			====		Hanssens Oude Kriek Handgeplukte Schaarbeekse Krieken
+	HORAL2017
+	LambickX				====		Generic LambickX logo
+	LambiekFabriek				====		Generic Lambiek Fabriek logo
+	Lindemans				====		Generic Lindemans logo
+	LindemansBlossomGueuze
+	LindemansCuveeRene
+	LindemansCuveeReneKriek
+	LindemansCuveeReneSB			====		2010 special blend
+	LindemansGingerGueuze
+	MikkellerSpontanCherryFred		====		Frederiksdal version of SpontanCherry
+	MoriauGeuze
+	OudBeersel
+	OudBeerselGreenWalnut
+	OudBeerselKriek
+	OudBeerselPijpenGeuze			====		Barrel Selection Oude Pijpen Geuze Vieille
+	OudBeerselSchaarbeekseKriek
+	OudBeerselVandervelden135
+	TommieSjef				====		Generic Tommie Sjef logo
+	Tilquin					====		Generic Tilquin logo
+	TilquinCassis
+	TilquinMure
+	TilquinOG
+	TilquinPinotGris
+	TilquinPinotNoir
+	TilquinQuetsche
 
 The allowable entries for color are:
 		yellow;
@@ -66,13 +129,25 @@ The allowable entries for color are:
 		lightorange;
 		cream;
 		darkpurple.
+		
+You may enter any string of text you like for bottledate.  It will be displayed at the top of the tag (within the color swath, assuming you choose a color other than 'clear'.
 
-If your size entry is one of 375, 750 or 1500, a corresponding circle to the left of the cutout will be shaded.  Obviously you can use these numbers as proxies for "small", "medium" and "large" bottles.
+You may enter any string of text for the note that you like.  Leaving this entry blank will mean no string is printed.
+
+If your size entry is one of 375, 750 or 1500, three circles to the left of the cutout will be drawn, and one of the circles will be shaded to indicated the size (375 is the top circle, 750 is the middle circle, and 1500 is the bottom circle).  If you enter any size that is not one of these three numbers, those circles on the left will not display.
+
+In the cap/cork entry, if you write 'cap' then the cutout will be a circle of diameter 1.25in.  This is sufficient to fit around the cap of all (of my) capped bottles, but won't go past the neck.  (The cap seems to provide sufficient barrier to tags falling off easily.)  If you write 'cork' (or really, anything else besides cap), then the cutout will be a circle of diameter 1.5in.  This is sufficient to fit around the cork/cage of all (of my) cork and caged bottles.  These tags go further down the neck than their capped counterparts.
+
+If you have an inventory number for your bottles, you can type the inventory number in the ID entry.  If you put an entry in this slot, it's printed to the right of the cutout in a small rectangular box.  If you enter nothing, the box is not drawn.
 
 
 Tips
 ----
 
+You can purchase circular die cutters of size 1.25in and 1.5in.  These result in perfectly cut circles and make life much easier.
+
+I print my tags on thick cardstock paper so they don't bend or crease as easily.
+
 It's quite hard to get a printer to print the 8.5x11 content of the resultant PDF perfectly onto an 8.5x11 sheet of paper (even if your printer has "borderless" printing capabilities).  You might need to experiment to find your best option for maximizing the size of the printed product without losing content off the side of the printed page. In my case, I have an option to scale to print the entire image (which means: scale by 97%), and this works fairly well.
 
-Finally, what I've set up for myself might not be precisely what you want for yourself; feel free to change the code as you see fit.  If you don't have experience in coding LaTeX, feel free to reach out to me with questions.
+Finally, what I've set up for myself might not be precisely what you want for yourself; feel free to change the code as you see fit.  If you don't have experience in coding LaTeX, feel free to reach out to me with questions.  If you have other labels you'd like to see included, feel free to give it a whirl yourself or send me an email.
