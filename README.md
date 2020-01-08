@@ -1,3 +1,7 @@
+# Note
+
+I do not own the rights to the logos or labels printed on these tags, and this program is not intended for the commericial use of these images. It is shared only for private use. If any producer wishes me to remove their images from this program, please contact me and I will remove them immediately.
+
 # Hang-Tags
 
 What it does
