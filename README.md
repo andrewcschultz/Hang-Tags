@@ -39,10 +39,11 @@ When inputting your entries into the tags.csv file, be sure to not disturb the f
     producer,color,bottledate,note,size,cap/cork,ID
     
 The allowable entries for producer are: 
-	BFM					====		Generic Brasserie des Franches-Montagnes logo
-	Bokke					====		Generic Bokke/Bokkeryder logo
-	Boon					====    	Generic Boon logo
-	BoonBlackLabel				====		Generic Boon Black Label logo (no edition number)
+*	BFM					====		Generic Brasserie des Franches-Montagnes logo
+*	Bokke					====		Generic Bokke/Bokkeryder logo
+*	Boon					====    	Generic Boon logo
+
+BoonBlackLabel				====		Generic Boon Black Label logo (no edition number)
 	BoonMariageParfait
 	BoonMikkellerCalvadosOG		
 	BoonOG						
