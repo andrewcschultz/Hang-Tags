@@ -7,7 +7,7 @@
 
 
 \newcommand{\DateTextColor}{}
-\newcommand{\SwatchPath}{}
+\newcommand{\SwathPath}{}
 \newcommand{\CutoutSize}{}
 \newcommand{\SmallBottleFill}{}
 \newcommand{\MedBottleFill}{}
@@ -17,109 +17,196 @@
 
 
 %
-\newcommand{\maketag}[6]{
+\newcommand{\maketag}[8]{
 
 
 % #1 = producer
-% 	Allowed values (and key):
-%		Ca = Cantillon
-%		DF = Drie Fonteinen (new silkscreen bottle)
-%		DF_old  = Drie Fonteinen (old silkscreen bottle)
-%		OB = Oud Beersel
-%		B = Boon
-%		G = Girardin
-%		DC = De Cam
-%		T = Tilquin
-%		BFM
-%		Ch = Chimay
-%		L = Lindemans
-%		Bo = Bokkereyder
-%		LF = Lambiek Fabriek
+%
+%  Allowed values (and key):
+%
+%		BFM								====		Generic Brasserie des Franches-Montagnes logo
+%  	 	Bokke							====		Generic Bokke/Bokkeryder logo
+%		Boon								====    Generic Boon logo
+%		BoonBlackLabel					====		Generic Boon Black Label logo (no edition number)
+%		BoonMariageParfait
+%		BoonMikkellerCalvadosOG		
+%		BoonOG						
+%		BoonVAT							====		Generic Boon VAT (no VAT number)
+%		Cantillon						====		Generic Cantillon logo
+%		CantillonCG						====		Non-US label for Cantillon classic gueuze
+%		CantillonCGus					====		US label for Cantillon classic gueuze
+%		CantillonCSG						====		Cuvee Saint-Gilloise
+%		CantillonFF						====		Fou Foune
+%		CantillonGCB						====		Non-US Grand Cru Bruocsella (no date)
+%		CantillonIris				
+%		CantillonKriek
+%		CantillonLouPepe
+%		CantillonNath2018
+%		CantillonRDG
+%		CantillonVigneronne
+%		Chimay							====		Generic Chimay logo
+%		DeCam							====		Generic De Cam logo
+%		Drie								====		Generic Drie Fonteinen logo (fountains)
+%		DrieAG							====		sublogo on silkscreen bottles
+%		DrieAGHoning						====		sublogo on silkscreen bottles
+%		DrieAGPaper						====		Paper label for Armand & Gaston (75cl on label)
+%		DrieAGV2015						====		sublogo on silkscreen bottles
+%		DrieDoesjelPaper					====		Paper label (12.7oz on label)
+%		DrieFramboos						====		sublogo on silkscreen bottles
+%		DrieFrambozenlambik				====		sublogo on silkscreen bottles
+%		DrieFramboosOogst2017			====		sublogo on silkscreen bottles
+%		DrieGoldenBlend					====		sublogo on silkscreen bottles
+%		DrieHommage						====		sublogo on silkscreen bottles
+%		DrieHommageBioFrambozenBarrel	====		sublogo on silkscreen bottles
+%		DrieHommageBioFrambozenHoning	====		sublogo on silkscreen bottles
+%		DrieIntenseRed					====		sublogo on silkscreen bottles
+%		DrieKriek						====		sublogo on silkscreen bottles
+%		DrieKriekenlambik				====		sublogo on silkscreen bottles
+%		DrieKriekHoning					====		sublogo on silkscreen bottles
+%		DrieKriekPaper					====		Paper label (37.5cl on label)
+%		DrieOG							====		sublogo on silkscreen bottles
+%		DrieOGHoning						====		sublogo on silkscreen bottles
+%		DrieOGPaper						====		Paper label (37.5cl on label)
+%		DrieOGPaperus					====		US Paper label (12.7oz on label)
+%		DrieOGV2014						
+%		DrieOGV2016
+%		DrieOld							====		Generic Drie Fonteinen logo (Papyrus-typeset "3")
+%		DrieSchaarbeekseKriek			====		sublogo on silkscreen bottles
+%		Girardin							====		Generic Girardin logo
+%		GirardinBlackLabel				
+%		HanssensHandgeplukte				====		Hanssens Oude Kriek Handgeplukte Schaarbeekse Krieken
+%		HORAL2017
+%		LambickX							====		Generic LambickX logo
+%		LambiekFabriek					====		Generic Lambiek Fabriek logo
+%		Lindemans						====		Generic Lindemans logo
+%		LindemansBlossomGueuze
+%		LindemansCuveeRene
+%		LindemansCuveeReneKriek
+%		LindemansCuveeReneSB				====		2010 special blend
+%		LindemansGingerGueuze
+%		MikkellerSpontanCherryFred		====		Frederiksdal version of SpontanCherry
+%		MoriauGeuze
+%		OudBeersel
+%		OudBeerselGreenWalnut
+%		OudBeerselKriek
+%		OudBeerselPijpenGeuze			====		Barrel Selection Oude Pijpen Geuze Vieille
+%		OudBeerselSchaarbeekseKriek
+%		OudBeerselVandervelden135
+%		TommieSjef						====		Generic Tommie Sjef logo
+%		Tilquin							====		Generic Tilquin logo
+%		TilquinCassis
+%		TilquinMure
+%		TilquinOG
+%		TilquinPinotGris
+%		TilquinPinotNoir
+%		TilquinQuetsche
+%
+%
 % #2 = color
 %	Allowed values
-%		yellow
-%		purple
+%
 %		blue
-%		red
-%		orange
-%		orangered
-%		green
-%		pinkred
 %		clear
-%		lightorange
 %		cream
 %		darkpurple
+%		green
+%		lightorange
+%		orange
+%		orangered
+%		pink
+%		pinked
+%		purple
+%		red
+%		yellow
+%
 %
 % #3 = date
-% #4 = name
+%
+%
+% #4 = note
+%
+%		If you want to include additional information (e.g., blend numbers 
+%		for bottles of Drie Fonteinen beers), you can put the text here
+%
 % #5 = size
-% #6 = offset
+%
+%		If your size is either 375, 750, or 1500, this shows three circles on the 
+%		left margin of the tag (just to the left of the cutout); a single circle 
+%		corresponding to the size of the bottle will be filled in.  The top
+%		circle indicates 375, middle is 750, and bottom is 1500.  If you leave 
+%		this field blank or enter any other value, nothing will display.
+%
+% #6 = size of cutout
+%
+%		If you put 'cap' you'll get a 1.25in diameter circle to cutout
+%		If you put anything else, you'll get a 1.5in diameter circle to cutout
+%
+% #7 = inventory number
+%
+%		If you have an inventory number, you can put it here.  The inventory number
+%		will be put in a box just to the right of the cutout	.  If you have no 
+%		inventory number
+%
+% #8 = printing offset
+% 
+%		This helps the tags know where to be printed on the page.  This parameter is
+%		populated by the program based on the row number of the label you're printing
+%
 
 %set text cutout size and color
-\ifthenelse{\equal{#1}{Ca}\OR\equal{#1}{BFM}}{\renewcommand{\CutoutSize}{.5in}}{\renewcommand{\CutoutSize}{.75in}}
-\ifthenelse{\equal{#2}{yellow}\OR\equal{#2}{cream}\OR\equal{#2}{clear}}{\renewcommand{\DateTextColor}{black}}{\renewcommand{\DateTextColor}{white}}
+\ifthenelse{\equal{#6}{cap}}
+	{\renewcommand{\CutoutSize}{.625in}}  % if
+	{\renewcommand{\CutoutSize}{.75in}}   % else
+\ifthenelse{\equal{#2}{yellow}\OR\equal{#2}{cream}\OR\equal{#2}{clear}\OR\equal{#2}{pink}}
+	{\renewcommand{\DateTextColor}{black}}   % if
+	{\renewcommand{\DateTextColor}{white}}   % else
 
-%set producer 	
-\ifthenelse{\equal{#1}{Ca}}{\renewcommand{\Producer}{tag_graphics/cantillon_tag.png}}
-	{\ifthenelse{\equal{#1}{DF}}{\renewcommand{\Producer}{tag_graphics/drie_tag.png}}
-		{\ifthenelse{\equal{#1}{DF_old}}{\renewcommand{\Producer}{tag_graphics/drie_old_tag.png}}
-			{\ifthenelse{\equal{#1}{OB}}{\renewcommand{\Producer}{tag_graphics/oud_beersel_tag.png}}
-				{\ifthenelse{\equal{#1}{B}}{\renewcommand{\Producer}{tag_graphics/boon_tag.png}}
-					{\ifthenelse{\equal{#1}{G}}{\renewcommand{\Producer}{tag_graphics/girardin_tag.png}}
-						{\ifthenelse{\equal{#1}{DC}}{\renewcommand{\Producer}{tag_graphics/de_cam_tag.png}}
-							{\ifthenelse{\equal{#1}{T}}{\renewcommand{\Producer}{tag_graphics/tilquin_tag.png}}
-								{\ifthenelse{\equal{#1}{BFM}}{\renewcommand{\Producer}{tag_graphics/bfm_tag.png}}
-									{\ifthenelse{\equal{#1}{Ch}}{\renewcommand{\Producer}{tag_graphics/chimay_tag.png}}
-										{\ifthenelse{\equal{#1}{L}}{\renewcommand{\Producer}{tag_graphics/lindemans_tag.png}}
-											{\ifthenelse{\equal{#1}{B_old}}{\renewcommand{\Producer}{tag_graphics/boon_old_tag.png}}
-												{\ifthenelse{\equal{#1}{LF}}{\renewcommand{\Producer}{tag_graphics/lambiek_fabriek_tag.png}}
-													{\ifthenelse{\equal{#1}{Bo}}{\renewcommand{\Producer}{tag_graphics/bokkereyder_tag.png}}{}}	
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+%set tag logo/label display
+\renewcommand{\Producer}{tag_graphics/#1.png}
 	
 %set color swatch
-\renewcommand{\SwatchPath}{tag_graphics/#2_swath.png}
+\renewcommand{\SwathPath}{swaths/#2_swath.png}
 
 %set bottle size fills
-\ifthenelse{\equal{#5}{375}}{\def\SmallBottleFill{black!50}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!0}}
-	{\ifthenelse{\equal{#5}{750}}{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!50}\def\LargeBottleFill{black!0}}
-		{\ifthenelse{\equal{#5}{1500}}{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!50}}
-			{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!0}}
+	\ifthenelse{\equal{#5}{375}}{\def\SmallBottleFill{black!50}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!0}}
+		{\ifthenelse{\equal{#5}{750}}{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!50}\def\LargeBottleFill{black!0}}
+			{\ifthenelse{\equal{#5}{1500}}{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!50}}
+				{\def\SmallBottleFill{black!0}\def\MedBottleFill{black!0}\def\LargeBottleFill{black!0}}
+			}
 		}
-	}
-
 		
-\begin{tikzpicture}[remember picture,overlay,shift={($(current page.north west)+#6$)}]
+\begin{tikzpicture}[remember picture,overlay,shift={($(current page.north west)+#8$)}]
 
-		\node[anchor=south west,inner sep=0] at (0,-4.25in) {\includegraphics[width=2.2in]{\SwatchPath}};
 		\node[anchor=south west,inner sep=0] at (0,-4.25in) {\includegraphics[width=2.2in]{\Producer}};
-		\draw[-,dotted] (.25in,0) -- ++(1.7in,0) -- ++(.25in,-.5in) -- ++(0in,-3.25in) -- ++(-.25in,-.5in) -- ++(-1.7in,0in) -- ++(-.25in,.5in) -- ++(0in,3.25in) -- ++(.25in,.5in);
-%		\draw[-,dotted] (0,-.5in) -- ++(.25in,.5in);
-%		\draw[-,dotted] (2.2in,-.5in) -- ++(-.25in,.5in);
-%		\draw[-,dotted] (0,-3.75in) -- ++(.25in,-.5in);
-%		\draw[-,dotted] (2.2in,-3.75in) -- ++(-.25in,-.5in);
-%		\draw[-,dotted] (2.2in,0) -- ++(0,-.5in);
-%		\draw[-,dotted] (2.2in,-4.25in) -- ++(0,.5in);
-%		\draw[-,dotted] (0in,-4.25in) -- ++(.25in,0);
-%		\draw[-,dotted] (2.2in,-4.25in) -- ++(-.25in,0in);
-		\draw[-,dotted] (1.1in,-1.25in) circle (\CutoutSize);
- 		\draw[-,fill=\SmallBottleFill, densely dotted] (.1725in,-.825in) circle (.1in); 
- 		\draw[-,fill=\MedBottleFill, densely dotted] (.1725in,-1.25in) circle (.1in); 
- 		\draw[-,fill=\LargeBottleFill, densely dotted] (.1725in,-1.675in) circle (.1in); 
+		\node[anchor=south west,inner sep=0] at (0,-4.25in) {\includegraphics[width=2.2in]{\SwathPath}};
+%%%%%%  FULL %%%%%%%
+%       If you want to see dotted lines around the whole tag, uncomment line 184 and comment out lines 189-197
+%		\draw[-,dotted] (.25in,0) -- ++(1.7in,0) -- ++(.25in,-.5in) -- ++(0in,-3.25in) -- ++(-.25in,-.5in) -- ++(-1.7in,0in) -- ++(-.25in,.5in) -- ++(0in,3.25in) -- ++(.25in,.5in);
 
-		   
+
+%%%%%% PARTIAL %%%%%
+%   If you want to have dotted lines only outside the tag (to be cut by a paper cutter) so as to avoid dots on your tag, uncomment lines 189-197 and comment out line 184
+		\draw[-,dotted] (0,-.5in) -- ++(.25in,.5in);
+		\draw[-,dotted] (2.2in,-.5in) -- ++(-.25in,.5in);
+		\draw[-,dotted] (0,-3.75in) -- ++(.25in,-.5in);
+		\draw[-,dotted] (2.2in,-3.75in) -- ++(-.25in,-.5in);
+		\draw[-,dotted] (2.2in,0) -- ++(0,-.5in);
+		\draw[-,dotted] (2.2in,-4.25in) -- ++(0,.5in);
+		\draw[-,dotted] (0in,-4.25in) -- ++(.25in,0);
+		\draw[-,dotted] (2.2in,-4.25in) -- ++(-.25in,0in);
+		\draw[-,dotted] (1.1in,-1.25in) circle (\CutoutSize);
+
+		\ifthenelse{\equal{#5}{375}\OR\equal{#5}{750}\OR\equal{#5}{1500}}
+			{ %if your bottle is sized 375,750,or 1500, draw circles to indicate size
+		 		\draw[-,fill=\SmallBottleFill, densely dotted] (.1725in,-.825in) circle (.1in); 
+ 				\draw[-,fill=\MedBottleFill, densely dotted] (.1725in,-1.25in) circle (.1in); 
+		 		\draw[-,fill=\LargeBottleFill, densely dotted] (.1725in,-1.675in) circle (.1in); 
+			}
+			{}  %don't draw the circles if the size isn't one of 375, 750, or 1500
+
+		\ifthenelse{\equal{#7}{}}{}{\node [rotate=270,draw] at (2.02in,-1.25in) {#7};}	% draw inventory number only if it is given	   
 		\coordinate (TextSpot) at (1.1in,-4in);
-		\node at (TextSpot) {\Large #4};
+		\node [align=center,font=\fontsize{15pt}{15pt}\selectfont] at (TextSpot) {#4};
 		\coordinate (DateSpot) at (1.1in,-.25in);
 		\node[text=\DateTextColor] at (DateSpot) {\bf \huge #3};
 
@@ -137,14 +224,14 @@
 \newlength{\xoffset} \setlength{\xoffset}{8.8in}
 \newlength{\yoffset} \setlength{\yoffset}{-4.25in}
 \DTLforeach*{tags}%
-	{\producer=producer,\color=color,\bottledate=bottledate,\beername=beername,\size=size}
+	{\producer=producer,\color=color,\bottledate=bottledate,\note=note,\size=size,\capOrCork=capOrCork,\id=id}
 	{%
 		\renewcommand{\positioner}{\intcalcMod{\theDTLrowi}{10}}
 		\ifthenelse{\positioner=1}{\addtolength{\yoffset}{4.25in}}{}
 		\ifthenelse{\positioner=6}{\addtolength{\yoffset}{-4.25in}}{}
 		\ifthenelse{\intcalcMod{\positioner}{5}=1}{\setlength{\xoffset}{0in}}{\addtolength{\xoffset}{2.2in}}
 %		\noindent We're on row \theDTLrowi \ and positioner is \positioner \ and xoffset is \the\xoffset \ and yoffset is \the\yoffset \\
-		\maketag{\producer}{\color}{\bottledate}{\beername}{\size}{(\xoffset,\yoffset)}
+		\maketag{\producer}{\color}{\bottledate}{\note}{\size}{\capOrCork}{\id}{(\xoffset,\yoffset)}
 		\ifthenelse{\positioner=0}{\newpage}{}
 	}%
 
