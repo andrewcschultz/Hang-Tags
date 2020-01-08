@@ -38,7 +38,7 @@ When inputting your entries into the tags.csv file, be sure to not disturb the f
 
     producer,color,bottledate,note,size,cap/cork,ID
     
-The allowable entries for producer are: 
+The allowable entries for *producer* are: 
 *	BFM					====		Generic Brasserie des Franches-Montagnes logo
 *	Bokke					====		Generic Bokke/Bokkeryder logo
 *	Boon					====    	Generic Boon logo
@@ -116,7 +116,7 @@ The allowable entries for producer are:
 *	TilquinPinotNoir
 *	TilquinQuetsche
 
-The allowable entries for color are:
+The allowable entries for *color* are:
 		yellow;
 		purple;
 		blue;
@@ -130,15 +130,15 @@ The allowable entries for color are:
 		cream;
 		darkpurple.
 		
-You may enter any string of text you like for bottledate.  It will be displayed at the top of the tag (within the color swath, assuming you choose a color other than 'clear'.
+You may enter any string of text you like for *bottledate*.  It will be displayed at the top of the tag (within the color swath, assuming you choose a color other than 'clear'.
 
-You may enter any string of text for the note that you like.  Leaving this entry blank will mean no string is printed.
+You may enter any string of text for  *note* that you like.  Leaving this entry blank will mean no string is printed.
 
-If your size entry is one of 375, 750 or 1500, three circles to the left of the cutout will be drawn, and one of the circles will be shaded to indicated the size (375 is the top circle, 750 is the middle circle, and 1500 is the bottom circle).  If you enter any size that is not one of these three numbers, those circles on the left will not display.
+If your *size* entry is one of 375, 750 or 1500, three circles to the left of the cutout will be drawn, and one of the circles will be shaded to indicated the size (375 is the top circle, 750 is the middle circle, and 1500 is the bottom circle).  If you enter any size that is not one of these three numbers, those circles on the left will not display.
 
-In the cap/cork entry, if you write 'cap' then the cutout will be a circle of diameter 1.25in.  This is sufficient to fit around the cap of all (of my) capped bottles, but won't go past the neck.  (The cap seems to provide sufficient barrier to tags falling off easily.)  If you write 'cork' (or really, anything else besides cap), then the cutout will be a circle of diameter 1.5in.  This is sufficient to fit around the cork/cage of all (of my) cork and caged bottles.  These tags go further down the neck than their capped counterparts.
+In the *cap/cork* entry, if you write 'cap' then the cutout will be a circle of diameter 1.25in.  This is sufficient to fit around the cap of all (of my) capped bottles, but won't go past the neck.  (The cap seems to provide sufficient barrier to tags falling off easily.)  If you write 'cork' (or really, anything else besides cap), then the cutout will be a circle of diameter 1.5in.  This is sufficient to fit around the cork/cage of all (of my) cork and caged bottles.  These tags go further down the neck than their capped counterparts.
 
-If you have an inventory number for your bottles, you can type the inventory number in the ID entry.  If you put an entry in this slot, it's printed to the right of the cutout in a small rectangular box.  If you enter nothing, the box is not drawn.
+If you have an inventory number for your bottles, you can type the inventory number in the *ID* entry.  If you put an entry in this slot, it's printed to the right of the cutout in a small rectangular box.  If you enter nothing, the box is not drawn.
 
 
 Tips
