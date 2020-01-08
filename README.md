@@ -42,80 +42,79 @@ The allowable entries for producer are:
 *	BFM					====		Generic Brasserie des Franches-Montagnes logo
 *	Bokke					====		Generic Bokke/Bokkeryder logo
 *	Boon					====    	Generic Boon logo
-
-BoonBlackLabel				====		Generic Boon Black Label logo (no edition number)
-	BoonMariageParfait
-	BoonMikkellerCalvadosOG		
-	BoonOG						
-	BoonVAT					====		Generic Boon VAT (no VAT number)
-	Cantillon				====		Generic Cantillon logo
-	CantillonCG				====		Non-US label for Cantillon classic gueuze
-	CantillonCGus				====		US label for Cantillon classic gueuze
-	CantillonCSG				====		Cuvee Saint-Gilloise
-	CantillonFF				====		Fou Foune
-	CantillonGCB				====		Non-US Grand Cru Bruocsella (no date)
-	CantillonIris				
-	CantillonKriek
-	CantillonLouPepe
-	CantillonNath2018
-	CantillonRDG
-	CantillonVigneronne
-	Chimay					====		Generic Chimay logo
-	DeCam					====		Generic De Cam logo
-	Drie					====		Generic Drie Fonteinen logo (fountains)
-	DrieAG					====		sublogo on silkscreen bottles
-	DrieAGHoning				====		sublogo on silkscreen bottles
-	DrieAGPaper				====		Paper label for Armand & Gaston (75cl on label)
-	DrieAGV2015				====		sublogo on silkscreen bottles
-	DrieDoesjelPaper			====		Paper label (12.7oz on label)
-	DrieFramboos				====		sublogo on silkscreen bottles
-	DrieFrambozenlambik			====		sublogo on silkscreen bottles
-	DrieFramboosOogst2017			====		sublogo on silkscreen bottles
-	DrieGoldenBlend				====		sublogo on silkscreen bottles
-	DrieHommage				====		sublogo on silkscreen bottles
-	DrieHommageBioFrambozenBarrel		====		sublogo on silkscreen bottles
-	DrieHommageBioFrambozenHoning		====		sublogo on silkscreen bottles
-	DrieIntenseRed				====		sublogo on silkscreen bottles
-	DrieKriek				====		sublogo on silkscreen bottles
-	DrieKriekenlambik			====		sublogo on silkscreen bottles
-	DrieKriekHoning				====		sublogo on silkscreen bottles
-	DrieKriekPaper				====		Paper label (37.5cl on label)
-	DrieOG					====		sublogo on silkscreen bottles
-	DrieOGHoning				====		sublogo on silkscreen bottles
-	DrieOGPaper				====		Paper label (37.5cl on label)
-	DrieOGPaperus				====		US Paper label (12.7oz on label)
-	DrieOGV2014						
-	DrieOGV2016
-	DrieOld					====		Generic Drie Fonteinen logo (Papyrus-typeset "3")
-	DrieSchaarbeekseKriek			====		sublogo on silkscreen bottles
-	Girardin				====		Generic Girardin logo
-	GirardinBlackLabel				
-	HanssensHandgeplukte			====		Hanssens Oude Kriek Handgeplukte Schaarbeekse Krieken
-	HORAL2017
-	LambickX				====		Generic LambickX logo
-	LambiekFabriek				====		Generic Lambiek Fabriek logo
-	Lindemans				====		Generic Lindemans logo
-	LindemansBlossomGueuze
-	LindemansCuveeRene
-	LindemansCuveeReneKriek
-	LindemansCuveeReneSB			====		2010 special blend
-	LindemansGingerGueuze
-	MikkellerSpontanCherryFred		====		Frederiksdal version of SpontanCherry
-	MoriauGeuze
-	OudBeersel
-	OudBeerselGreenWalnut
-	OudBeerselKriek
-	OudBeerselPijpenGeuze			====		Barrel Selection Oude Pijpen Geuze Vieille
-	OudBeerselSchaarbeekseKriek
-	OudBeerselVandervelden135
-	TommieSjef				====		Generic Tommie Sjef logo
-	Tilquin					====		Generic Tilquin logo
-	TilquinCassis
-	TilquinMure
-	TilquinOG
-	TilquinPinotGris
-	TilquinPinotNoir
-	TilquinQuetsche
+* 	BoonBlackLabel				====		Generic Boon Black Label logo (no edition number)
+*	BoonMariageParfait
+*	BoonMikkellerCalvadosOG		
+*	BoonOG						
+*	BoonVAT					====		Generic Boon VAT (no VAT number)
+*	Cantillon				====		Generic Cantillon logo
+*	CantillonCG				====		Non-US label for Cantillon classic gueuze
+*	CantillonCGus				====		US label for Cantillon classic gueuze
+*	CantillonCSG				====		Cuvee Saint-Gilloise
+*	CantillonFF				====		Fou Foune
+*	CantillonGCB				====		Non-US Grand Cru Bruocsella (no date)
+*	CantillonIris				
+*	CantillonKriek
+*	CantillonLouPepe
+*	CantillonNath2018
+*	CantillonRDG
+*	CantillonVigneronne
+*	Chimay					====		Generic Chimay logo
+*	DeCam					====		Generic De Cam logo
+*	Drie					====		Generic Drie Fonteinen logo (fountains)
+*	DrieAG					====		sublogo on silkscreen bottles
+*	DrieAGHoning				====		sublogo on silkscreen bottles
+*	DrieAGPaper				====		Paper label for Armand & Gaston (75cl on label)
+*	DrieAGV2015				====		sublogo on silkscreen bottles
+*	DrieDoesjelPaper			====		Paper label (12.7oz on label)
+*	DrieFramboos				====		sublogo on silkscreen bottles
+*	DrieFrambozenlambik			====		sublogo on silkscreen bottles
+*	DrieFramboosOogst2017			====		sublogo on silkscreen bottles
+*	DrieGoldenBlend				====		sublogo on silkscreen bottles
+*	DrieHommage				====		sublogo on silkscreen bottles
+*	DrieHommageBioFrambozenBarrel		====		sublogo on silkscreen bottles
+*	DrieHommageBioFrambozenHoning		====		sublogo on silkscreen bottles
+*	DrieIntenseRed				====		sublogo on silkscreen bottles
+*	DrieKriek				====		sublogo on silkscreen bottles
+*	DrieKriekenlambik			====		sublogo on silkscreen bottles
+*	DrieKriekHoning				====		sublogo on silkscreen bottles
+*	DrieKriekPaper				====		Paper label (37.5cl on label)
+*	DrieOG					====		sublogo on silkscreen bottles
+*	DrieOGHoning				====		sublogo on silkscreen bottles
+*	DrieOGPaper				====		Paper label (37.5cl on label)
+*	DrieOGPaperus				====		US Paper label (12.7oz on label)
+*	DrieOGV2014						
+*	DrieOGV2016
+*	DrieOld					====		Generic Drie Fonteinen logo (Papyrus-typeset "3")
+*	DrieSchaarbeekseKriek			====		sublogo on silkscreen bottles
+*	Girardin				====		Generic Girardin logo
+*	GirardinBlackLabel				
+*	HanssensHandgeplukte			====		Hanssens Oude Kriek Handgeplukte Schaarbeekse Krieken
+*	HORAL2017
+*	LambickX				====		Generic LambickX logo
+*	LambiekFabriek				====		Generic Lambiek Fabriek logo
+*	Lindemans				====		Generic Lindemans logo
+*	LindemansBlossomGueuze
+*	LindemansCuveeRene
+*	LindemansCuveeReneKriek
+*	LindemansCuveeReneSB			====		2010 special blend
+*	LindemansGingerGueuze
+*	MikkellerSpontanCherryFred		====		Frederiksdal version of SpontanCherry
+*	MoriauGeuze
+*	OudBeersel
+*	OudBeerselGreenWalnut
+*	OudBeerselKriek
+*	OudBeerselPijpenGeuze			====		Barrel Selection Oude Pijpen Geuze Vieille
+*	OudBeerselSchaarbeekseKriek
+*	OudBeerselVandervelden135
+*	TommieSjef				====		Generic Tommie Sjef logo
+*	Tilquin					====		Generic Tilquin logo
+*	TilquinCassis
+*	TilquinMure
+*	TilquinOG
+*	TilquinPinotGris
+*	TilquinPinotNoir
+*	TilquinQuetsche
 
 The allowable entries for color are:
 		yellow;
