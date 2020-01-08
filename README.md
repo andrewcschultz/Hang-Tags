@@ -1,7 +1,3 @@
-# Note
-
-I do not own the rights to the logos or labels printed on these tags, and this program is not intended for the commericial use of these images. It is shared only for private use. If any producer wishes me to remove their images from this program, please contact me and I will remove them immediately.
-
 # Hang-Tags
 
 What it does
@@ -155,3 +151,7 @@ I print my tags on thick cardstock paper so they don't bend or crease as easily.
 It's quite hard to get a printer to print the 8.5x11 content of the resultant PDF perfectly onto an 8.5x11 sheet of paper (even if your printer has "borderless" printing capabilities).  You might need to experiment to find your best option for maximizing the size of the printed product without losing content off the side of the printed page. In my case, I have an option to scale to print the entire image (which means: scale by 97%), and this works fairly well.
 
 Finally, what I've set up for myself might not be precisely what you want for yourself; feel free to change the code as you see fit.  If you don't have experience in coding LaTeX, feel free to reach out to me with questions.  If you have other labels you'd like to see included, feel free to give it a whirl yourself or send me an email.
+
+# Note
+
+I do not own the rights to the logos or labels printed on these tags, and this program is not intended for the commericial use of these images. It is shared only for private use. If any producer wishes me to remove their images from this program, please contact me and I will remove them immediately.
