@@ -79,7 +79,7 @@ The allowable entries for `producer` are:
 *	DrieFramboosOogst2017			====		sublogo on silkscreen bottles
 *	DrieGoldenBlend				====		sublogo on silkscreen bottles
 *	DrieHommage				====		sublogo on silkscreen bottles
-*	DrieHommageBioFrambozen		====		sublogo on silkscreen bottles
+*	DrieHommageBioFrambozen			====		sublogo on silkscreen bottles
 *	DrieHommageBioFrambozenBarrel		====		sublogo on silkscreen bottles
 *	DrieHommageBioFrambozenHoning		====		sublogo on silkscreen bottles
 *	DrieAardbei				====		sublogo on silkscreen bottles
@@ -104,6 +104,9 @@ The allowable entries for `producer` are:
 *	DrieRodeBosbes				====		sublogo on silkscreen bottles
 *	DrieBlauweBosbes			====		sublogo on silkscreen bottles
 * 	DrieSpelingVIIIiii			====		sublogo on silkscreen bottles
+* 	DrieZenne92				====		sublogo on silkscreen bottles
+* 	DrieZenne93				====		sublogo on silkscreen bottles
+* 	DrieZenne94				====		sublogo on silkscreen bottles
 *	Girardin				====		Generic Girardin logo
 *	GirardinBlackLabel				
 *	HanssensHandgeplukte			====		Hanssens Oude Kriek Handgeplukte Schaarbeekse Krieken
@@ -161,7 +164,10 @@ The allowable entries for `color` are:
 		3f_pink_perzik	(3 Fonteinen Perzik);
 		3f_pink_aardbei	(3 Fonteinen Aardbei & Aardbei Kriek);
 		3f_silver	(3 Fonteinen Platinum);
-		3f_yllow	(3 Fonteinen Golden Blend).
+		3f_yellow	(3 Fonteinen Golden Blend);
+		3f_zenne92	(3 Fonteinen Zenne Y Frontera Blend 92);
+		3f_zenne93	(3 Fonteinen Zenne Y Frontera Blend 93);
+		3f_zenne94	(3 Fonteinen Zenne Y Frontera Blend 94).
 		
 		
 You may enter any string of text you like for `bottledate`.  It will be displayed at the top of the tag (within the color swath, assuming you choose a color other than 'clear'.
