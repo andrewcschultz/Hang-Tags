@@ -72,30 +72,41 @@ The allowable entries for `producer` are:
 *	DrieAGHoning				====		sublogo on silkscreen bottles
 *	DrieAGPaper				====		Paper label for Armand & Gaston (75cl on label)
 *	DrieAGV2015				====		sublogo on silkscreen bottles
-*	DrieBraambes
+*	DrieBraambes				====		sublogo on silkscreen bottles
 *	DrieDoesjelPaper			====		Paper label (12.7oz on label)
 *	DrieFramboos				====		sublogo on silkscreen bottles
 *	DrieFrambozenlambik			====		sublogo on silkscreen bottles
 *	DrieFramboosOogst2017			====		sublogo on silkscreen bottles
 *	DrieGoldenBlend				====		sublogo on silkscreen bottles
 *	DrieHommage				====		sublogo on silkscreen bottles
+*	DrieHommageBioFrambozen			====		sublogo on silkscreen bottles
 *	DrieHommageBioFrambozenBarrel		====		sublogo on silkscreen bottles
 *	DrieHommageBioFrambozenHoning		====		sublogo on silkscreen bottles
+*	DrieAardbei				====		sublogo on silkscreen bottles
+*	DrieAardbeiKriek			====		sublogo on silkscreen bottles
 *	DrieIntenseRed				====		sublogo on silkscreen bottles
 *	DrieKriek				====		sublogo on silkscreen bottles
-*	DrieKriekBarrel
+*	DrieKriekBarrel				====		sublogo on silkscreen bottles
 *	DrieKriekenlambik			====		sublogo on silkscreen bottles
 *	DrieKriekHoning				====		sublogo on silkscreen bottles
 *	DrieKriekPaper				====		Paper label (37.5cl on label)
+*	DrieRobijn				====		sublogo on silkscreen bottles
+*	DriePerzik				====		sublogo on silkscreen bottles
 *	DrieOG					====		sublogo on silkscreen bottles
 *	DrieOGHoning				====		sublogo on silkscreen bottles
 *	DrieOGPaper				====		Paper label (37.5cl on label)
 *	DrieOGPaperus				====		US Paper label (12.7oz on label)
-*	DrieOGV2014						
-*	DrieOGV2016
+*	DrieOGV2014				====		Paper label	Nachtlichten artwork
+*	DrieOGV2016				====		Paper label	Nachtlichten artwork
 *	DrieOld					====		Generic Drie Fonteinen logo (Papyrus-typeset "3")
 *	DrieSchaarbeekseKriek			====		sublogo on silkscreen bottles
-* 	DrieSpelingVIIIiii
+*	DriePlatinum				====		sublogo on silkscreen bottles
+*	DrieRodeBosbes				====		sublogo on silkscreen bottles
+*	DrieBlauweBosbes			====		sublogo on silkscreen bottles
+* 	DrieSpelingVIIIiii			====		sublogo on silkscreen bottles
+* 	DrieZenne92				====		sublogo on silkscreen bottles
+* 	DrieZenne93				====		sublogo on silkscreen bottles
+* 	DrieZenne94				====		sublogo on silkscreen bottles
 *	Girardin				====		Generic Girardin logo
 *	GirardinBlackLabel				
 *	HanssensHandgeplukte			====		Hanssens Oude Kriek Handgeplukte Schaarbeekse Krieken
@@ -140,13 +151,23 @@ The allowable entries for `color` are:
 		lightorange;
 		cream;
 		darkpurple;
+		black;
 		3f_green 	(3 Fonteinen Oude Gueuze);
 		3f_darkgreen	(3 Fonteinen Armand & Gaston);
 		3f_purple	(3 Fonteinen Schaarbeekse Kriek);
 		3f_darkpurple	(3 Fonteinen Braambes);
 		3f_red		(3 Fonteinen Kriek);
+		3f_red_robijn	(3 Fonteinen Robijn);
+		3f_red_bosbes	(3 Fonteinen Rode Bosbes);
+		3f_darkblue	(3 Fonteinen Blauwe Bosbes);
 		3f_pink		(3 Fonteinen Framboos & Hommage);
-		3f_yllow	(3 Fonteinen Golden Blend).
+		3f_pink_perzik	(3 Fonteinen Perzik);
+		3f_pink_aardbei	(3 Fonteinen Aardbei & Aardbei Kriek);
+		3f_silver	(3 Fonteinen Platinum);
+		3f_yellow	(3 Fonteinen Golden Blend);
+		3f_zenne92	(3 Fonteinen Zenne Y Frontera Blend 92);
+		3f_zenne93	(3 Fonteinen Zenne Y Frontera Blend 93);
+		3f_zenne94	(3 Fonteinen Zenne Y Frontera Blend 94).
 		
 		
 You may enter any string of text you like for `bottledate`.  It will be displayed at the top of the tag (within the color swath, assuming you choose a color other than 'clear'.
