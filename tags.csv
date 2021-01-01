@@ -1,4 +1,4 @@
-producer,color,bottledate,note,size,capOrCork,id
+producer,swathcolor,bottledate,note,size,capOrCork,id
 BFM,yellow,00/00/00,Text Here,750,cap,0000
 Bokke,orange,00/00/00,Text Here,1500,cap,
 Boon,green,00/00/00,Text Here,750,cork,A47X
