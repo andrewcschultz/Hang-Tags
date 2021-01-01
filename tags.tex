@@ -263,13 +263,13 @@
 \newlength{\xoffset} \setlength{\xoffset}{8.8in}
 \newlength{\yoffset} \setlength{\yoffset}{-4.25in}
 \DTLforeach*{tags}%
-	{\producer=producer,\color=color,\bottledate=bottledate,\note=note,\size=size,\capOrCork=capOrCork,\id=id}
+	{\producer=producer,\swathcolor=swathcolor,\bottledate=bottledate,\note=note,\size=size,\capOrCork=capOrCork,\id=id}
 	{%
 		\renewcommand{\positioner}{\intcalcMod{\theDTLrowi}{10}}
 		\ifthenelse{\positioner=1}{\addtolength{\yoffset}{4.25in}}{}
 		\ifthenelse{\positioner=6}{\addtolength{\yoffset}{-4.25in}}{}
 		\ifthenelse{\intcalcMod{\positioner}{5}=1}{\setlength{\xoffset}{0in}}{\addtolength{\xoffset}{2.2in}}
-		\maketag{\producer}{\color}{\bottledate}{\note}{\size}{\capOrCork}{\id}{(\xoffset,\yoffset)}
+		\maketag{\producer}{\swathcolor}{\bottledate}{\note}{\size}{\capOrCork}{\id}{(\xoffset,\yoffset)}
 		\ifthenelse{\positioner=0}{\newpage}{}
 	}%
 
